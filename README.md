@@ -11,9 +11,29 @@
 - Gerenciamento de memória para alocar e liberar dinamicamente todos os nós da árvore.
 
 
-**Compilando o projeto com `make` (ou `gcc`):**
-```bash
-$ make
-gcc -Wall -g -c main.c
-gcc -Wall -g -c b_plus_tree.c
-gcc -Wall -g -o programa_arvore_b main.o b_plus_tree.o
+## 🖥️ Uso do Programa
+Execute o programa diretamente no terminal:
+
+    ./programa_arvore_b <ordem>
+
+- `<ordem>`: inteiro ≥ 2 que define a ordem da Árvore B+ a ser testada.
+
+> Dica: teste diferentes ordens (ex: 3, 5, 10, 20, 50) e compare os tempos médios de busca para enriquecer seu relatório.
+
+## 🚀 Como Baixar e Executar
+### Pré-requisitos
+- GCC (ou outro compilador C compatível)
+- Python 3 (para o script gerador de dados)
+- Make (opcional)
+
+### Instruções
+1. Clone o repositório:
+       git clone git@github.com:gg-gustavo/B-Tree.git 
+2. Compile o código:
+       make
+3. Gere a massa de dados:
+       python3 scripts/gera_dados.py
+4. Execute os testes:
+       ./programa_arvore_b e passe a ordem <ordem>
+5. Limpe arquivos objeto:
+       make clean
